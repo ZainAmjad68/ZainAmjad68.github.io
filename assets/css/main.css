@@ -2415,6 +2415,134 @@ input, select, textarea {
 			}
 
 /* List */
+	
+	/* Experiment */	
+	.list .num {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		transition: 0.25s;
+	}
+	
+	.list .num:nth-child(1):before {
+		content: '1';
+		font-size: 3rem;
+		font-weight: bold;
+		color: black;
+		width: 2rem;
+		opacity: 0.15;
+		transition: 0.25s;
+	}
+	
+	.list .num:nth-child(2):before {
+		content: '2';
+		font-size: 3rem;
+		font-weight: bold;
+		color: black;
+		width: 2rem;
+		opacity: 0.15;
+		transition: 0.25s;
+	}
+
+	.list .num:nth-child(3):before {
+		content: '3';
+		font-size: 3rem;
+		font-weight: bold;
+		color: black;
+		width: 2rem;
+		opacity: 0.15;
+		transition: 0.25s;
+	}
+
+	.list .num:nth-child(4):before {
+		content: '4';
+		font-size: 3rem;
+		font-weight: bold;
+		color: black;
+		width: 2rem;
+		opacity: 0.15;
+		transition: 0.25s;
+	}
+
+	.list .num:nth-child(5):before {
+		content: '5';
+		font-size: 3rem;
+		font-weight: bold;
+		color: black;
+		width: 2rem;
+		opacity: 0.15;
+		transition: 0.25s;
+	}
+
+	.list .num:nth-child(6):before {
+		content: '6';
+		font-size: 3rem;
+		font-weight: bold;
+		color: black;
+		width: 2rem;
+		opacity: 0.15;
+		transition: 0.25s;
+	}
+
+	.list .num:nth-child(7):before {
+		content: '7';
+		font-size: 3rem;
+		font-weight: bold;
+		color: black;
+		width: 2rem;
+		opacity: 0.15;
+		transition: 0.25s;
+	}
+
+	.list .num:nth-child(8):before {
+		content: '8';
+		font-size: 3rem;
+		font-weight: bold;
+		color: black;
+		width: 2rem;
+		opacity: 0.15;
+		transition: 0.25s;
+	}
+	.list .num:nth-child(9):before {
+		content: '9';
+		font-size: 3rem;
+		font-weight: bold;
+		color: black;
+		width: 2rem;
+		opacity: 0.15;
+		transition: 0.25s;
+	}
+
+	.list .num:nth-child(10):before {
+		content: '10';
+		font-size: 3rem;
+		font-weight: bold;
+		color: black;
+		width: 2rem;
+		opacity: 0.15;
+		transition: 0.25s;
+	}
+
+	.list h3 {
+		position: relative;
+		left: 0.5rem;
+		color: #3d3d3d;
+		font-size: 1rem;
+		transition: 0.25s;
+	}
+	
+	.list .num:hover {
+		background-color: #fafafa;
+	}
+	
+	.list .num:hover:before {
+		opacity: 0.3;
+	}
+	
+	.list .num:hover h3 {
+		left: 1rem;
+	}
+	
 
 	ol {
 		list-style: decimal;
@@ -2636,6 +2764,10 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	header.bigger {
+		font-size: 1.75rem;
+	}
+
 	header.major {
 		margin-bottom: 3em;
 	}
@@ -2649,7 +2781,7 @@ input, select, textarea {
 				content: '';
 				width: 3.25em;
 				height: 2px;
-				margin: 0.7em 0 1em 0;
+				margin: 0.2em 0 1em 0;
 				border-radius: 2px;
 			}
 
