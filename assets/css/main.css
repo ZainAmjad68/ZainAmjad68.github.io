@@ -2414,6 +2414,8 @@ input, select, textarea {
 				width: 100%;
 			}
 
+	
+
 /* List */
 	
 	/* Experiment */	
@@ -3914,4 +3916,10 @@ input, select, textarea {
 				max-width: 100%;
 			}
 
+		}
+
+
+		.spotlight .content p {
+			padding-left: 100px;
+			padding-right: 100px;
 		}
