@@ -12,6 +12,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="./dual-Y_chart.js"></script>
+		<script type="text/javascript">
+		  google.charts.load("current", {packages:["corechart"]});
+		  google.charts.setOnLoadCallback(drawChart);
+		  function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+			  ['Grade Scale', 'Times I Got It'],
+			  ['A',     4],
+			  ['A-',      12],
+			  ['B',  2],
+			  ['C', 1]
+			]);
+	
+			var options = {
+			  title: 'Grades in Core CS Subjects (Total = 18)',
+			  is3D: true,
+			};
+	
+			var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+			chart.draw(data, options);
+		  }
+		</script>	
 	</head>
 	<body class="is-preload">
 
@@ -29,12 +52,89 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
-								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-								<h2>Magna feugiat lorem</h2>
-								<p>Excelled when faced technically challenging subjects. Demonstrated by the stark contrast b/w CGPA in 1st (3.1) and 2nd half (3.65) of Degree</p>
-								<p>Table Comparing No. of As i got in 2nd half compared to 1st one. 22 subjects (18 technical) studied in 2nd half, got As in 15 of them</p>
-								<h2>Tempus veroeros</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+								<span class="image main"><img src="images/graduation_pic copy.jpg" alt="" /></span>
+								<h2>Excelling in the face of Adversity</h2>
+								<p>As an ITU graduate from the class of 2021, my journey at the University was initially daunting as I encountered something of a culture shock. Surrounded by students from all corners of the country, many of whom were academic toppers in their respective cities, I felt out of place and struggled to establish connections. However, I eventually found my community among middle-class individuals who, like me, sought a balance between enjoying life and being serious about their future.</p>
+								<p>While facing the challenges of university life, health issues also presented a significant setback when I had to cope with viral Hepatitis, leading to nearly an entire semester of sitting out. As a result, my grades suffered, but upon a full recovery, I returned to the academic arena more determined than ever to succeed. My dedication is evident in my improved performance, as I emerged as one of the top-performing students in the latter half of my degree.</p>
+								<p>Not shying away from hard work, I embraced a rigorous academic approach, opting to take as many technical subjects as possible and achieving exceptional grades in all of them. Notably, during the final two years of my degree, I even ventured into Masters level courses that intrigued me, demonstrating my passion for learning and my ability to excel in advanced subjects. 
+								<h3>Academic Performance at a Glance:</h3>
+								<p>The following visual representations highlight the core pillars of my education – exceptional performance in critical Computer Science subjects, depicted through a pie chart, and a steady enhancement in my GPA over the course of my degree, showcased by a line chart.</p>
+								<div style="display:flex; flex-direction: row; justify-content: center;">
+									<div id="piechart_3d" style="width: 650; height: 361px;"></div>
+									<div id="chart_div"></div>
+								</div>
+								<br><br>The following table highlights the various technical subjects I undertook, proudly displaying the consistently outstanding A grades I achieved in each one. It stands as a powerful testament to my unwavering commitment to excellence, even amidst the challenges I faced.</p>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th style="width: 30%;">Subject</th>
+												<th style="width: 15%;">Grade</th>
+												<th style="width: 55%;">Associated Research/Project</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Software Engineering</td>
+												<td>A</td>
+												<td>Open Source Contributions</td>
+											</tr>
+											<tr>
+												<td>Database Systems</td>
+												<td>A</td>
+												<td>Music Player</td>
+											</tr>
+											<tr>
+												<td>Human Computer Interaction</td>
+												<td>A-</td>
+												<td>Need to take a Look</td>
+											</tr>
+											<tr>
+												<td>Information Security</td>
+												<td>A</td>
+												<td>File System</td>
+											</tr>
+											<tr>
+												<td>Artificial Intelligence</td>
+												<td>B+</td>
+												<td>Ludo</td>
+											</tr>
+											<tr>
+												<td>Software Design Patterns</td>
+												<td>A-</td>
+												<td>Project utilizing Design Patterns</td>
+											</tr>
+											<tr>
+												<td>Distributed Computing</td>
+												<td>A-</td>
+												<td>Master-Slave Distributed System</td>
+											</tr>
+											<tr>
+												<td>Mobile Application Development</td>
+												<td>A-</td>
+												<td>Mobile Game</td>
+											</tr>
+											<tr>
+												<td>Pattern Recognition</td>
+												<td>B</td>
+												<td>Depression Detector</td>
+											</tr>
+											<tr>
+												<td><strong>Final Year Project</strong></td>
+												<td>A</td>
+												<td>Tile Visualization System</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="1"></td>
+												<td>8 'A's out of 10</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+								<h2><strong>Future Ambitions</strong></h2>
+								<p>Looking ahead to the future, the recent surge in Artificial Intelligence (AI) has underscored the necessity for CS professionals to possess practical knowledge of AI applications. To truly harness the potential of these groundbreaking technologies, understanding the intricate inner workings of AI systems is paramount. Despite the limited availability of resources shedding light on this domain, I am committed to overcoming this challenge through dedicated research and engaging in valuable discourse. As such, <strong>my future ambition revolves around pursuing a Master's degree in an advanced CS subject, with a particular focus on AI or Data Science.</strong> By immersing myself in this cutting-edge field, I aim to equip myself with comprehensive expertise in AI concepts, including Generative Neural Networks (GNNs), and pave the way for innovation in this transformative domain. This aspiration drives my determination to excel in AI and Data Science, empowering me to contribute meaningfully to the advancement of intelligent systems and making a positive impact on the world of computer science.</p>
 							</section>
 					</div>
 
