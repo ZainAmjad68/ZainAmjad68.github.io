@@ -3923,3 +3923,220 @@ input, select, textarea {
 			padding-left: 100px;
 			padding-right: 100px;
 		}
+
+		.projects {
+			background-color: var(--bg-color);
+			padding: 32px 0;
+			margin-top: 2rem;
+		  }
+		  
+		  .project-pic {
+			width: 100%;
+			max-height: 200px;
+		  }
+		  
+		  .projects-container {
+			display: flex;
+			flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+			justify-content: center; /* Center cards horizontally */
+		  }
+		  
+		  .projects-title {
+			text-align: center;
+			margin-bottom: 1rem;
+		  }
+		  
+		  .project-container {
+			text-align: center;
+			width: calc(100% - 20px); /* Adjust container width for mobile */
+			padding: 1rem;
+			margin: 10px;
+			max-width: 360px; /* Set maximum width for cards */
+		  }
+		  
+		  .project-container p {
+			padding: 0.4rem;
+		  }
+		  
+		  .project-title {
+			margin-bottom: var(--bottom-margin);
+		  }
+		  
+		  .project-details {
+			margin-bottom: var(--bottom-margin);
+		  }
+		  
+		  .project-card {
+			background-color: #fff;
+			border-radius: 11px;
+			box-shadow: 0 3px 10px var(--primary-shadow);
+			padding: 20px;
+			width: 100%; /* Adjust card width to occupy full width */
+		  }
+		  
+		  .carousel-container {
+			width: 70rem;
+			margin: 20px auto;
+			padding: 1rem;
+			position: relative;
+		  }
+		  
+		  .carousel {
+			display: flex;
+			overflow: hidden;
+		  }
+		  
+		  .certification {
+			flex: 0 0 100%;
+			background-color: #ffffff;
+			border-radius: 10px;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			text-align: center;
+			position: relative;
+		  }
+		  
+		  .certification img {
+			max-width: 100%;
+			height: auto;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		  }
+		  
+		  .certification h2 {
+			font-size: 1.5rem;
+			margin: 0;
+		  }
+		  
+		  .certification p {
+			font-size: 1rem;
+			color: #666666;
+		  }
+		  		  
+		  .prev-btn,
+		  .next-btn {
+			background-color: #333;
+			color: white;
+			border: none;
+			font-size: 1.5rem;
+			cursor: pointer;
+			padding: 5px 10px;
+			border-radius: 5px;
+			position: absolute;
+			top: 45%;
+			transform: translateY(-50%);
+			z-index: 1;
+			height: 4rem;
+    		min-width: 4rem;
+    		line-height: 2rem;
+		  }
+		  
+		  .prev-btn {
+			left: 40px;
+		  }
+		  
+		  .next-btn {
+			right: 40px;
+		  }
+		  
+		  @media (max-width: 1280px) {
+			.carousel-container {
+			  width: 100%;
+			  padding: 0;
+			}
+			
+			.carousel {
+			  flex-direction: column;
+			}
+			
+			.certification {
+			  width: 100%;
+			  margin: 0 auto 20px;
+			}
+			
+			.prev-btn,
+			.next-btn {
+			  font-size: 1rem;
+			  padding: 3px 6px;
+			  height: 3rem;
+			  min-width: 3rem;
+			  line-height: 1.5rem;  
+			}
+		  }		  
+
+		  @media (max-width: 768px) {
+			.carousel-container {
+			  width: 100%;
+			}
+			
+			.carousel {
+			  flex-direction: column;
+			}
+			
+			.certification {
+			  width: 100%;
+			  margin: 0 auto 20px;
+			}
+			
+			.prev-btn,
+			.next-btn {
+			  font-size: 1rem;
+			  padding: 3px 6px;
+			  height: 2rem;
+			  min-width: 2rem;
+			  line-height: 1.25rem;  
+			}
+		  }
+
+		  /* Open Source Contributions Section */
+.open-source {
+    padding: 2rem 0;
+}
+
+.open-source-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.open-source-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contribution-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 1rem);
+	text-align: center;
+}
+
+.contribution-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contribution-details {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.contribution-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contribution-link:hover {
+    background-color: #555;
+}
