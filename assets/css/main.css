@@ -3924,6 +3924,7 @@ input, select, textarea {
 			padding-right: 100px;
 		}
 
+		/* Projects Section */
 		.projects {
 			background-color: var(--bg-color);
 			padding: 32px 0;
@@ -3974,6 +3975,8 @@ input, select, textarea {
 			width: 100%; /* Adjust card width to occupy full width */
 		  }
 		  
+		  
+		/* Certifications Section */
 		  .carousel-container {
 			width: 70rem;
 			margin: 20px auto;
@@ -4088,55 +4091,68 @@ input, select, textarea {
 			}
 		  }
 
-		  /* Open Source Contributions Section */
-.open-source {
-    padding: 2rem 0;
-}
+		/* Open Source Contributions Section */
+		.open-source {
+			padding: 2rem 0;
+		}
 
-.open-source-title {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
-}
+		.open-source-title {
+			font-size: 2rem;
+			text-align: center;
+			margin-bottom: 2rem;
+			color: #333;
+		}
 
-.open-source-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
+		.open-source-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 2rem;
+		}
 
-.contribution-card {
-    background-color: #fff;
-    border-radius: 0.5rem;
-    padding: 2rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: calc(33.33% - 1rem);
-	text-align: center;
-}
+		.contribution-card {
+			background-color: #fff;
+			border-radius: 0.5rem;
+			padding: 2rem;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			width: calc(33.33% - 1rem);
+			text-align: center;
+		}
 
-.contribution-title {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
+		.contribution-title {
+			font-size: 1.25rem;
+			margin-bottom: 1rem;
+			color: #333;
+		}
 
-.contribution-details {
-    color: #666;
-    margin-bottom: 1.5rem;
-}
+		.contribution-details {
+			color: #666;
+			margin-bottom: 1.5rem;
+		}
 
-.contribution-link {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #333;
-    color: #fff;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
+		.contribution-link {
+			display: inline-block;
+			padding: 0.5rem 1rem;
+			background-color: #333;
+			color: #fff;
+			border-radius: 0.25rem;
+			text-decoration: none;
+			transition: background-color 0.3s ease;
+		}
 
-.contribution-link:hover {
-    background-color: #555;
-}
+		.contribution-link:hover {
+			background-color: #555;
+		}
+
+		@media screen and (max-width: 768px) {
+			.open-source-container {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.contribution-card {
+				width: 100%;
+				max-width: 600px;
+				margin: 0 auto;
+			}
+		}
