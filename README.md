@@ -50,4 +50,4 @@ Feel free to connect with me on social media:
 - [Facebook](https://facebook.com/zainamjad1998)
 - [Instagram](https://www.instagram.com/za1namjad/)
 
-Designed with ❤️ by Zain Amjad.
+Designed with ❤️ by Zain Amjad <sup><sub>(using a template from HTML5up)</sub></sup>.
