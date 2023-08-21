@@ -26,8 +26,11 @@ google.charts.load('current', {
     var classicOptions = {
       title: 'GPA Progression Throughout the Degree',
       subtitle: 'CGPA: 3.34 | Core Subject CGPA: 3.65',
-      width: 540,
+      width: '100%',
       height: 300,
+      chartArea: {
+        width: '80%', // Adjust the chart area to make room for labels
+      },
       // Gives each series an axis that matches the vAxes number below.
       series: {
         0: {
