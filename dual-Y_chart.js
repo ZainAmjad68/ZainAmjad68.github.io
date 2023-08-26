@@ -25,7 +25,7 @@ google.charts.load('current', {
 
     var classicOptions = {
       title: 'GPA Progression Throughout the Degree',
-      subtitle: 'CGPA: 3.34 | Core Subject CGPA: 3.65',
+      subtitle: 'CGPA: 3.34 | Core Subject CGPA: 3.62',
       width: '100%',
       height: 300,
       chartArea: {
